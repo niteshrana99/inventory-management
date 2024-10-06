@@ -1,6 +1,7 @@
 import {  Menu } from 'lucide-react';
 import SidebarLink from './SidebarLink';
 import { useToggleSidebar } from '@/hooks/useToggleSideBar';
+import Image from 'next/image';
 
 
 const Sidebar = () => {
@@ -13,8 +14,14 @@ const Sidebar = () => {
 
   return (
     <div className={sidebarClassNames}>
-      <div className='flex gap-3 justify-between pt-5 items-center md:justify-normal overflow-hidden'>
-        <div>Logo</div>
+      <div className='flex gap-3 justify-between pt-5 items-center md:justify-center overflow-hidden'>
+      <Image
+          src="https://s3-inventory-management-images.s3.ap-south-1.amazonaws.com/logo.png"
+          alt="logo"
+          width={27}
+          height={27}
+          className="rounded w-8"
+        />
         <h1
           className={`${
             isSideBarCollapsed ? 'hidden' : 'block'
