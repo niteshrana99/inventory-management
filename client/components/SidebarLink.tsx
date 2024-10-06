@@ -1,4 +1,4 @@
-import { Icon, LucideIcon } from "lucide-react";
+import {  LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

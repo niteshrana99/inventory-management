@@ -1,18 +1,12 @@
 'use client';
 
 import { useToggleSidebar } from '@/hooks/useToggleSideBar';
-import { useAppDispatch, useAppSelector } from '@/providers/redux';
-import { setIsDarkMode } from '@/state';
-import { Bell, Menu, Search, Sun } from 'lucide-react';
+import { useAppDispatch } from '@/providers/redux';
+import { Menu, Search } from 'lucide-react';
 
 export const Navbar = () => {
 
   const { toggleSidebar } = useToggleSidebar();
-  const isDarkMode = useAppSelector(state => state.global.isDarkMode);
-  const dispatch = useAppDispatch();
-  // const toggleDarkMode = () => {
-  //   dispatch(setIsDarkMode(!isDarkMode));
-  // }
 
   return (
     <div className='flex justify-between items-center w-full mb-7 gap-5'>
@@ -34,17 +28,6 @@ export const Navbar = () => {
               className='text-gray-400'
               size={20}
             />
-          </div>
-        </div>
-      </div>
-
-      <div className='flex justify-between items-center gap-5'>
-        <div>
-          <div>
-            {/* Todo */}
-            {/* <button onClick={toggleDarkMode}>
-              <Sun className='text-gray-600' />
-            </button> */}
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { useGetDashboardMetricsQuery } from "@/state/api";
 import { TrendingUp } from "lucide-react";
-import React, { useState } from "react";
+import React from "react";
 import {
   Bar,
   BarChart,
@@ -14,8 +14,6 @@ import {
 const CardSalesSummary = () => {
   const { data, isLoading, isError } = useGetDashboardMetricsQuery();
   const salesData = data?.salesSummary || [];
-
-  const [timeframe, setTimeframe] = useState("weekly");
 
   const totalValueSum =
     salesData.reduce((acc, curr) => acc + curr.totalValue, 0) || 0;

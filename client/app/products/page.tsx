@@ -3,7 +3,6 @@
 import { useCreateProductMutation, useGetProductsQuery } from "@/state/api";
 import { PlusCircleIcon, SearchIcon } from "lucide-react";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Header from "@/components/header";
 import Rating from "@/components/rating";
 import CreateProductModal from "./CreateProductModal";

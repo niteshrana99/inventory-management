@@ -1,8 +1,7 @@
-import { useAppDispatch, useAppSelector } from '@/providers/redux';
-import { setIsSidebarCollapsed } from '@/state';
-import { Layout, Menu } from 'lucide-react';
+import {  Menu } from 'lucide-react';
 import SidebarLink from './SidebarLink';
 import { useToggleSidebar } from '@/hooks/useToggleSideBar';
+
 
 const Sidebar = () => {
   const { isSideBarCollapsed, toggleSidebar, sideBarMenuConfig } =
