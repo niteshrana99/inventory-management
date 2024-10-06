@@ -1,7 +1,6 @@
 'use client';
 
 import { useToggleSidebar } from '@/hooks/useToggleSideBar';
-import { useAppDispatch } from '@/providers/redux';
 import { Menu, Search } from 'lucide-react';
 
 export const Navbar = () => {
